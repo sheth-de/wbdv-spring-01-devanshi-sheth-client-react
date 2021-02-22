@@ -83,7 +83,7 @@ export default class CourseManager
                                 <li className="nav-item">
                                     <input className="form-control wbdv-newcourse-fld"
                                            type="text"
-                                           placeholder="Enter New Course Name"
+                                           placeholder="New Course"
                                            value={this.state.newCourseName} onChange={this.handleChange}
                                     />
                                 </li>

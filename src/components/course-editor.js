@@ -7,7 +7,7 @@ const CourseEditor = ({history}) =>
 return(
     <div className="container">
         <MetaTags>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="viewport" content="width=device-width"/>
         </MetaTags>
         <h3>
             <Link to="/courses/table">
