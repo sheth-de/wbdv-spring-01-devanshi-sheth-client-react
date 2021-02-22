@@ -73,7 +73,7 @@ export default class CourseManager
             <div className="container-fluid">
             <div className="row mt-2">
                 <div className="col-12 col-md-12 col-lg-12 col-sm-12">
-                    <nav className="navbar navbar-expand-lg navbar-success">
+                    <nav className="navbar navbar-expand-lg navbar-success w-100">
                         <i className="fa fa-bars fa-2x black-color"></i>
                         <div className="col-2 col-md-2 d-none d-sm-table-cell">
                             <a className="navbar-brand black-color" href="#">Course Manager</a>
@@ -98,12 +98,12 @@ export default class CourseManager
                             </button>
 
                         </div>
-                        <div className="col-1 col-md-1 col-sm-1">
-                            {/*<i className="fa fa-plus-circle fa-2x float-right black-color"></i>*/}
-                            <Link to="/">
-                                <i className="fas fa-2x fa-home float-right black-color"></i>
-                            </Link>
-                        </div>
+                        {/*<div className="col-1 col-md-1 col-sm-1">*/}
+                        {/*    /!*<i className="fa fa-plus-circle fa-2x float-right black-color"></i>*!/*/}
+                        {/*    <Link to="/">*/}
+                        {/*        <i className="fas fa-2x fa-home float-right black-color"></i>*/}
+                        {/*    </Link>*/}
+                        {/*</div>*/}
                     </nav>
                 </div>
             </div>

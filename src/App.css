@@ -99,3 +99,7 @@ code {
   position: relative;
   left: 50%;
 }
+.make-bold{
+  font-weight: bold;
+  font-size: medium;
+}

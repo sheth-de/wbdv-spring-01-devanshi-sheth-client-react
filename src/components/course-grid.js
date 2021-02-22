@@ -6,13 +6,14 @@ import CourseRow from "./course-row";
 export default function CourseGrid(props){
     let mappedCourses;
     return(
-            <div>
+            <div className="container-fluid">
                 <div className="row">
-                    <div className="col-5">
-                        Recent Documents
+                    <div className="col-5 d-none d-sm-table-cell">
+                        <p className="make-bold">Recent Documents</p>
                     </div>
-                    <div className="col-4">
-                        Owned by me
+                    <div className="col-4 d-none d-sm-table-cell">
+                        <p className="make-bold">Owned by me
+                            <i className="fa fa-caret-down" aria-hidden="true"></i></p>
                     </div>
                     <div className="col-1">
                         <i className="fas fa-folder fa-2x float-right"></i>
