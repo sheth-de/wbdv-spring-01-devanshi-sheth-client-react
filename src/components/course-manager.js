@@ -73,7 +73,7 @@ export default class CourseManager
             <div className="container-fluid">
             <div className="row mt-2">
                 <div className="col-12 col-md-12 col-lg-12 col-sm-12">
-                    <nav className="navbar navbar-expand-lg navbar-success w-100">
+                    <nav className="navbar nav-fill">
                         <i className="fa fa-bars fa-2x black-color"></i>
                         <div className="col-2 col-md-2 d-none d-sm-table-cell">
                             <a className="navbar-brand black-color" href="#">Course Manager</a>
@@ -125,7 +125,7 @@ export default class CourseManager
                 {/*<CourseTable courses={this.state.courses}/>*/}
                 {/*<CourseGrid courses={this.state.courses}/>*/}
                 <button className="fixed-button transparent-button" onClick={this.addCourse}>
-                    <i className="fa fa-plus-circle fa-5x red-color">
+                    <i className="fa fa-plus-circle fa-4x red-color">
                     </i>
                 </button>
             </div>

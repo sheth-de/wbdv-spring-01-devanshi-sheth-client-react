@@ -63,8 +63,8 @@ code {
 }
 .fixed-button {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  right: 15px;
+  bottom: 15px;
 }
 .blue-color{
   color: blue;
@@ -101,5 +101,8 @@ code {
 }
 .make-bold{
   font-weight: bold;
-  font-size: medium;
+  font-size: small;
+}
+.text-right{
+  text: right;
 }
