@@ -33,7 +33,7 @@ const CourseCard = ({
         <MetaTags>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
         </MetaTags>
-                    <div className="col col-sm-12 card" style={{width: "15rem", margin: "15px", height: "width=device-height" }}>
+                    <div className="col col-sm-12 card" style={{width: "15rem", margin: "15px" }}>
                         <img src="https://www.valuecoders.com/blog/wp-content/uploads/2016/08/react.png"
                              className="card-img-top" alt="..."/>
                         <div className="card-body">
