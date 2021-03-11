@@ -31,7 +31,7 @@ export default class CourseTable extends
                                 <i className="fas fa-sort-alpha-down  black-color" aria-hidden="true"></i>
                         </th>
                         <th scope="col">
-                            <Link to="/courses/grid">
+                            <Link to="/course/grid">
                                 <i className="fas fa-th black-color"></i>
                             </Link>
                         </th>

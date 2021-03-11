@@ -26,7 +26,7 @@ export default function CourseGrid(props){
                         <i className="fas fa-sort-alpha-down float-right"></i>
                     </div>
                     <div className="col-1">
-                        <Link to="/courses/table">
+                        <Link to="/course/table">
                             <i className="fas fa-list black-color float-right"></i>
                         </Link>
                     </div>
