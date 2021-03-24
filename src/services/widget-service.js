@@ -1,5 +1,5 @@
-const TOPICS_URL="http://localhost:8080/api/topics";
-const WIDGETS_URL="http://localhost:8080/api/widgets";
+const TOPICS_URL="https://webdev-webapp-devanshi.herokuapp.com/api/topics";
+const WIDGETS_URL="https://webdev-webapp-devanshi.herokuapp.com/api/widgets";
 
 
 export const findWidgetsForTopic = (topicId) =>

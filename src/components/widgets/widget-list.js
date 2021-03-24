@@ -28,7 +28,7 @@ const WidgetList = ({
 
 
     return(
-        <div>
+        <div className="mt-4">
             <i onClick={() => createWidgetForTopic(topicId)} className="fas fa-plus float-right fa-2x"></i>
             <h1>Widget List
                 {/*{widgetId}*/}
