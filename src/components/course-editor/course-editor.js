@@ -11,13 +11,16 @@ import LessonTabs from "./lesson-tabs";
 import TopicTabs from "./topic-pills";
 import courseService from "../../services/course-service";
 import CourseTitle from "./course-title";
+import WidgetList from "../widgets/widget-list";
+import widgetReducer from "../../reducers/widget-reducer";
 
 
 const reducer = combineReducers({
     moduleReducer: moduleReducer,
     lessonReducer: lessonReducer,
     topicReducer: topicReducer,
-    courseTitleReducer: courseTitleReducer
+    courseTitleReducer: courseTitleReducer,
+    widgetReducer: widgetReducer
 })
 
 // const store = createStore(moduleReducer)
@@ -53,6 +56,9 @@ const CourseEditor = ({history}) => {
                     <LessonTabs/>
                     <div>
                         <TopicTabs/>
+                    </div>
+                    <div>
+                        <WidgetList/>
                     </div>
                 </div>
             </div>

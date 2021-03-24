@@ -93,7 +93,7 @@ code {
   position: relative;
   left: 50%;
 }
-.make-bold{
+.make-bold {
   font-weight: bold;
   font-size: small;
 }
@@ -109,6 +109,7 @@ code {
   color: white;
   background-color: #007bff;
 }
+
 
   /*.navbar-nav .nav-link.active {*/
   /*  color: white;*/
