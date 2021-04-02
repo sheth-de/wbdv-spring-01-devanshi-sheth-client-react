@@ -31,6 +31,8 @@ return(
                         type: e.target.value}))} value={widget.type} className="form-control">
                         <option value={"HEADING"}>Heading</option>
                         <option value={"PARAGRAPH"}>Paragraph</option>
+                        <option value={"LIST"}>List</option>
+                        <option value={"IMAGE"}>Image</option>
                     </select>
                     <input onChange={(e) => setWidget(widget => ({...widget, text: e.target.value}))}
                            value={widget.text} className="form-control"/>
