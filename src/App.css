@@ -116,7 +116,18 @@ code {
   /*  background-color: #3396ff;*/
   /*}*/
 
-
 .set-pill-size{
   width: 15rem;
+}
+
+.red-highlight{
+  color: red;
+  background-color: rgba(255,0,0,0.2);
+  /*opacity: 0.2;*/
+}
+
+.green-highlight{
+  color: green;
+  background-color: rgba(0,255,0,0.2);
+  /*opacity: 0.2;*/
 }
