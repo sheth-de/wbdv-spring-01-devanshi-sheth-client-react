@@ -1,14 +1,23 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import {Link} from "react-router-dom";
 
-const MultipleChoiceQuestion = ({question}) => {
-    const [answer, setAnswer] = useState(null)
-    const [grade, check] = useState(false)
+const MultipleChoiceQuestion = ({question,grade,questions, setQuestions}) => {
+    const [answer, setAnswer] = useState(null);
+    useEffect(() => {
+        if (grade) {
+            // console.log(questions);
+            const unrelated = questions.filter(q => q._id !== question._id);
+            const target = questions.find(q => q._id === question._id);
+            target.answer = answer;
+            const updatedQuestions = [...unrelated, target];
+            setQuestions(updatedQuestions);
+        }
+    }, [grade])
     return(
         <div>
             <h4>{question.question}
             {
-                grade &&
+                grade && answer!==undefined && typeof answer!==undefined &&
                 <>
                     {
                         answer.toLowerCase() === question.correct.toLowerCase() &&
@@ -54,13 +63,13 @@ const MultipleChoiceQuestion = ({question}) => {
             <div>
             Your answer: {answer}
             </div>
-            <div>
-                <Link
-                    onClick={() => check(true)}
-                    className="btn btn-success">
-                    Grade
-                </Link>
-            </div>
+        {/*    <div>*/}
+        {/*        <Link*/}
+        {/*            onClick={() => check(true)}*/}
+        {/*            className="btn btn-success">*/}
+        {/*            Grade*/}
+        {/*        </Link>*/}
+        {/*    </div>*/}
         </div>
     )
 }

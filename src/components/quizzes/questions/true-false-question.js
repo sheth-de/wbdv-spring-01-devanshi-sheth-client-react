@@ -1,9 +1,20 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import {Link} from "react-router-dom";
 
-const TrueFalseQuestion = ({question}) => {
+const TrueFalseQuestion = ({question,grade,questions, setQuestions}) => {
     const [answer, setAnswer] = useState(null)
-    const [grade, check] = useState(false)
+    useEffect(() => {
+        if (grade) {
+            console.log(questions);
+            const unrelated = questions.filter(q => q._id !== question._id);
+            const target = questions.find(q => q._id === question._id);
+            target.answer = JSON.stringify(answer);
+            console.log("target is ",target.answer)
+            const updatedQuestions = [...unrelated, target];
+            setQuestions(updatedQuestions);
+        }
+    }, [grade])
+    // const [grade, check] = useState(false)
     return (
         <div>
             <h4>
@@ -77,13 +88,13 @@ const TrueFalseQuestion = ({question}) => {
             {/*<br/>*/}
             Your answer: {(JSON.stringify(answer)).toLowerCase()}
             </div>
-            <div>
-            <Link
-                onClick={() => check(true)}
-                className="btn btn-success">
-                Grade
-            </Link>
-            </div>
+            {/*<div>*/}
+            {/*<Link*/}
+            {/*    onClick={() => check(true)}*/}
+            {/*    className="btn btn-success">*/}
+            {/*    Grade*/}
+            {/*</Link>*/}
+            {/*</div>*/}
             <br></br>
         </div>
     )

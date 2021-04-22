@@ -31,11 +31,16 @@ const QuizzesList = () => {
                                 {/*</div>*/}
                                 {/*<div className="col-sm-4"></div>*/}
                                 {/*<div className="col-sm-6">*/}
+
                             <Link
                             to={`/courses/${courseId}/quizzes/${quiz._id}`}
                             className="btn btn-primary float-right">
                             Start
                             </Link>
+                                <Link className='btn btn-secondary float-right'
+                                      to={`/courses/${courseId}/quizzes/${quiz._id}/attempts`}>
+                                    Attempts Histories
+                                </Link>
                                 {/*</div>*/}
                             </div>
                         )
